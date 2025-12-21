@@ -1,0 +1,34 @@
+* *::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-text);
+  font-family: "Crimson Pro", "DM Sans";
+  background-color: var(--color-background);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

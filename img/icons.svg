@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg"  aria-hidden="true" overflow="hidden" style="position:absolute;width:0;height:0" >
+ <defs>
+   <symbol id="arrow-btn" viewBox="0 0 878 1024"> 
+    <path d="M732.946 730.463v-576.594l93.479 5.79-718.882 719.71-107.543-107.543 718.882-718.881 7.446 93.479h-579.076v-146.423l730.463 1.655v728.809h-144.769z"/>
+   </symbol>
+ </defs>
+</svg>

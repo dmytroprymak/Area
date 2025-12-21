@@ -1,0 +1,22 @@
+.header {
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    color: var(--color-text);
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  &__list {
+    display: flex;
+    padding: 20px 24px;
+    gap: 27px;
+    border-radius: 32px;
+  }
+}

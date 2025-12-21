@@ -1,0 +1,23 @@
+.button {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: var(--color-background);
+  padding: 14px 22px;
+  border: none;
+  border-radius: 32px;
+  background-color: var(--color-button);
+  transition: background-color 0.3s;
+
+  &__arrow {
+    fill: var(--color-background);
+  }
+
+  &:hover {
+    background-color: var(--color-brand);
+  }
+
+  &--light {
+    background-color: var(--color-brand-light);
+  }
+}
