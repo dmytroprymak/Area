@@ -1,0 +1,17 @@
+.trust-section {
+  padding: 50px 0;
+  &__heading {
+    color: var(--color-gray);
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "DM Sans";
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+}

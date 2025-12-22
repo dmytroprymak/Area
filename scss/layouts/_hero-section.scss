@@ -1,27 +1,34 @@
 .hero-section {
+  text-align: center;
+
   &__title {
     font-size: 150px;
-    text-align: center;
-    width: 100%;
     height: 140px;
   }
 
   &__picture {
     position: relative;
-    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
   }
 
   &__img {
-    position: absolute;
-    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 907px;
+    margin-bottom: -120px;
+    z-index: 2;
   }
 
   &__background {
-    position: relative;
-    top: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 1200px;
     height: 362px;
-    border-radius: 32px;
     background-color: var(--color-brand);
+    border-radius: 32px;
+    z-index: 1;
   }
 }

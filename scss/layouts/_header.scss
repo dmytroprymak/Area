@@ -14,9 +14,16 @@
   }
 
   &__list {
+    position: fixed;
+    top: 36px; //Add padding for section
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
     display: flex;
-    padding: 20px 24px;
     gap: 27px;
+    padding: 20px 24px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 32px;
   }
 }

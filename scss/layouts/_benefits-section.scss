@@ -1,0 +1,58 @@
+.benefits-section {
+  &__heading {
+    color: var(--color-gray);
+    margin-bottom: 50px;
+    font-size: 17px;
+    font-weight: 300;
+    font-family: "DM Sans";
+  }
+
+  &__text {
+    font-size: 60px;
+    height: 54px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: "Crimson Text";
+  }
+
+  &__paragraf {
+    color: var(--color-gray);
+    margin-bottom: 90px;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "DM Sans";
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    flex-basis: calc((100% - 60px) / 4);
+  }
+  &__advantage {
+    position: relative;
+    &::before {
+      position: absolute;
+      top: -42px;
+      width: 100%;
+      border: 1px solid var(--color-gray-light);
+      content: "";
+    }
+  }
+  &__advantage-image {
+    margin-bottom: 24px;
+  }
+
+  &__advantage-text {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Crimson Text";
+  }
+
+  &__advantage-paragraf {
+    color: var(--color-gray);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "DM Sans";
+  }
+}
