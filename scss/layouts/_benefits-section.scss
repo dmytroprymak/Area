@@ -1,4 +1,5 @@
 .benefits-section {
+  padding: 30px 0 60px 0;
   &__heading {
     color: var(--color-gray);
     margin-bottom: 50px;
@@ -26,20 +27,25 @@
 
   &__list {
     display: flex;
+    text-align: left;
     gap: 20px;
     flex-basis: calc((100% - 60px) / 4);
+    margin-bottom: 60px;
   }
   &__advantage {
     position: relative;
+    align-items: start;
+
     &::before {
       position: absolute;
+      // left: 0;
       top: -42px;
       width: 100%;
       border: 1px solid var(--color-gray-light);
       content: "";
     }
   }
-  &__advantage-image {
+  &__advantage-img {
     margin-bottom: 24px;
   }
 
@@ -54,5 +60,15 @@
     font-size: 15px;
     font-weight: 400;
     font-family: "DM Sans";
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    max-height: 620px;
+    border-radius: 32px;
   }
 }

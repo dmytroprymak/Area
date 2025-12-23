@@ -8,6 +8,9 @@
   border-radius: 32px;
   background-color: var(--color-button);
   transition: background-color 0.3s;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "DM Sans";
 
   &__arrow {
     fill: var(--color-background);

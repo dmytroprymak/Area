@@ -1,0 +1,18 @@
+.text-numbers {
+  color: var(--color-gray);
+  font-size: 15px;
+  font-weight: 800;
+  font-family: "DM Sans";
+}
+
+.text-list-item {
+  display: inline-block;
+  max-width: 460px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "DM Sans";
+  // flex-grow: 0;
+  // flex-shrink: 0;
+  // flex-basis: auto;
+}
