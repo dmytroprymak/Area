@@ -1,0 +1,43 @@
+.quote-section {
+  padding: 60px 0 120px 0;
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 670px;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 590px;
+    height: 100%;
+    border-radius: 32px;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    width: 590px;
+    height: 670px;
+    justify-content: center;
+  }
+
+  &__quote {
+    width: 100%;
+    max-width: 542px;
+    height: 100%;
+    max-height: 295px;
+    line-height: 105%;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Crimson Text";
+  }
+
+  &__author {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    margin: 0;
+  }
+}
