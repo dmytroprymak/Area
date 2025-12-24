@@ -12,10 +12,12 @@
         <nav class="header__nav">
           <a class="header__logo" href="#">Area</a>
           <ul class="header__list">
-            <li><a class="link" href="#">Benefits</a></li>
-            <li><a class="link" href="#">Specifications</a></li>
-            <li><a class="link" href="#">How-to</a></li>
-            <li><a class="link" href="#">Contact Us</a></li>
+            <li><a class="link" href="#benefits-section">Benefits</a></li>
+            <li>
+              <a class="link" href="#specifications-section">Specifications</a>
+            </li>
+            <li><a class="link" href="#how-to-section">How-to</a></li>
+            <li><a class="link" href="#contact-section">Contact Us</a></li>
           </ul>
           <button class="header__button button">
             Learn More
@@ -27,7 +29,7 @@
       </div>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero-section section">
         <div class="container">
           <h1 class="hero-section__title">Browse everything.</h1>
           <div class="hero-section__picture">
@@ -41,7 +43,7 @@
           </div>
         </div>
       </section>
-      <section class="trust-section">
+      <section class="trust-section section">
         <div class="container">
           <h2 class="trust-section__heading">Trusted by:</h2>
           <div class="trust-section__logos">
@@ -54,7 +56,7 @@
           </div>
         </div>
       </section>
-      <section class="benefits-section">
+      <section class="benefits-section section" id="benefits-section">
         <div class="container">
           <h2 class="benefits-section__heading">Benefits</h2>
           <p class="benefits-section__text">We’ve cracked the code.</p>
@@ -131,7 +133,7 @@
           />
         </div>
       </section>
-      <section class="example-section">
+      <section class="example-section section">
         <div class="container">
           <div class="example-section__container">
             <div class="example-section__left">
@@ -179,8 +181,8 @@
           </div>
         </div>
       </section>
-      <section class="why-section">
-        <div class="container">
+      <section class="why-section section" id="specifications-section">
+        <div class="container container--before">
           <div class="why-section__container">
             <p class="why-section__caption text-caption">Specs</p>
             <p class="why-section__text">Why Choose Area?</p>
@@ -191,135 +193,136 @@
             <button class="button button--light">Discover More</button>
           </div>
         </div>
-      </section>
-      <section class="value-section">
-        <div class="container">
-          <div class="table">
-            <div class="table__first">
-              <p class="table__heding table__heding--main">Area</p>
-              <p class="table__item">
-                <svg class="table__svg" width="14" height="14">
-                  <use href="./img/icons.svg#icon-check"></use>
-                </svg>
-                Ultra-fast browsing
-              </p>
-              <p class="table__item">
-                <svg class="table__svg" width="14" height="14">
-                  <use href="./img/icons.svg#icon-check"></use>
-                </svg>
-                Advanced AI insights
-              </p>
-              <p class="table__item">
-                <svg class="table__svg" width="14" height="14">
-                  <use href="./img/icons.svg#icon-check"></use>
-                </svg>
-                Seamless integration
-              </p>
-              <p class="table__item">
-                <svg class="table__svg" width="14" height="14">
-                  <use href="./img/icons.svg#icon-check"></use>
-                </svg>
-                Advanced AI insights
-              </p>
-              <p class="table__item">
-                <svg class="table__svg" width="14" height="14">
-                  <use href="./img/icons.svg#icon-check"></use>
-                </svg>
-                Ultra-fast browsing
-              </p>
-              <p class="table__item">
-                <svg class="table__svg" width="14" height="14">
-                  <use href="./img/icons.svg#icon-check"></use>
-                </svg>
-                Full UTF-8 support
-              </p>
-            </div>
-            <div class="table__second">
-              <p class="table__heding">WebSurge</p>
-              <div class="table__second-items">
+
+        <div class="value-section">
+          <div class="container">
+            <div class="table">
+              <div class="table__first">
+                <p class="table__heding table__heding--main">Area</p>
                 <p class="table__item">
                   <svg class="table__svg" width="14" height="14">
                     <use href="./img/icons.svg#icon-check"></use>
                   </svg>
-                  Fast browsing
+                  Ultra-fast browsing
                 </p>
                 <p class="table__item">
                   <svg class="table__svg" width="14" height="14">
                     <use href="./img/icons.svg#icon-check"></use>
                   </svg>
-                  Basic AI recommendations
+                  Advanced AI insights
                 </p>
                 <p class="table__item">
                   <svg class="table__svg" width="14" height="14">
                     <use href="./img/icons.svg#icon-check"></use>
                   </svg>
-                  Restricts customization
-                </p>
-                <p class="table__item">
-                  <svg class="table__svg" width="16" height="16">
-                    <use href="./img/icons.svg#icon-cross"></use>
-                  </svg>
-                  Basic AI insights
+                  Seamless integration
                 </p>
                 <p class="table__item">
                   <svg class="table__svg" width="14" height="14">
                     <use href="./img/icons.svg#icon-check"></use>
                   </svg>
-                  Fast browsing
+                  Advanced AI insights
                 </p>
                 <p class="table__item">
-                  <svg class="table__svg" width="16" height="16">
-                    <use href="./img/icons.svg#icon-cross"></use>
+                  <svg class="table__svg" width="14" height="14">
+                    <use href="./img/icons.svg#icon-check"></use>
                   </svg>
-                  Potential display errors
+                  Ultra-fast browsing
+                </p>
+                <p class="table__item">
+                  <svg class="table__svg" width="14" height="14">
+                    <use href="./img/icons.svg#icon-check"></use>
+                  </svg>
+                  Full UTF-8 support
                 </p>
               </div>
-            </div>
-            <div class="table__third">
-              <p class="table__heding">HyperView</p>
-              <div class="table__third-items">
-                <p class="table__item">
-                  <svg class="table__svg" width="16" height="16">
-                    <use href="./img/icons.svg#icon-cross"></use>
-                  </svg>
-                  Moderate speeds
-                </p>
-                <p class="table__item">
-                  <svg class="table__svg" width="16" height="16">
-                    <use href="./img/icons.svg#icon-cross"></use>
-                  </svg>
-                  No AI assistance
-                </p>
-                <p class="table__item">
-                  <svg class="table__svg" width="16" height="16">
-                    <use href="./img/icons.svg#icon-cross"></use>
-                  </svg>
-                  Steep learning curve
-                </p>
-                <p class="table__item">
-                  <svg class="table__svg" width="16" height="16">
-                    <use href="./img/icons.svg#icon-cross"></use>
-                  </svg>
-                  No AI assistance
-                </p>
-                <p class="table__item">
-                  <svg class="table__svg" width="16" height="16">
-                    <use href="./img/icons.svg#icon-cross"></use>
-                  </svg>
-                  Moderate speeds
-                </p>
-                <p class="table__item">
-                  <svg class="table__svg" width="16" height="16">
-                    <use href="./img/icons.svg#icon-cross"></use>
-                  </svg>
-                  Partial UTF-8 support
-                </p>
+              <div class="table__second">
+                <p class="table__heding">WebSurge</p>
+                <div class="table__second-items">
+                  <p class="table__item">
+                    <svg class="table__svg" width="14" height="14">
+                      <use href="./img/icons.svg#icon-check"></use>
+                    </svg>
+                    Fast browsing
+                  </p>
+                  <p class="table__item">
+                    <svg class="table__svg" width="14" height="14">
+                      <use href="./img/icons.svg#icon-check"></use>
+                    </svg>
+                    Basic AI recommendations
+                  </p>
+                  <p class="table__item">
+                    <svg class="table__svg" width="14" height="14">
+                      <use href="./img/icons.svg#icon-check"></use>
+                    </svg>
+                    Restricts customization
+                  </p>
+                  <p class="table__item">
+                    <svg class="table__svg" width="16" height="16">
+                      <use href="./img/icons.svg#icon-cross"></use>
+                    </svg>
+                    Basic AI insights
+                  </p>
+                  <p class="table__item">
+                    <svg class="table__svg" width="14" height="14">
+                      <use href="./img/icons.svg#icon-check"></use>
+                    </svg>
+                    Fast browsing
+                  </p>
+                  <p class="table__item">
+                    <svg class="table__svg" width="16" height="16">
+                      <use href="./img/icons.svg#icon-cross"></use>
+                    </svg>
+                    Potential display errors
+                  </p>
+                </div>
+              </div>
+              <div class="table__third">
+                <p class="table__heding">HyperView</p>
+                <div class="table__third-items">
+                  <p class="table__item">
+                    <svg class="table__svg" width="16" height="16">
+                      <use href="./img/icons.svg#icon-cross"></use>
+                    </svg>
+                    Moderate speeds
+                  </p>
+                  <p class="table__item">
+                    <svg class="table__svg" width="16" height="16">
+                      <use href="./img/icons.svg#icon-cross"></use>
+                    </svg>
+                    No AI assistance
+                  </p>
+                  <p class="table__item">
+                    <svg class="table__svg" width="16" height="16">
+                      <use href="./img/icons.svg#icon-cross"></use>
+                    </svg>
+                    Steep learning curve
+                  </p>
+                  <p class="table__item">
+                    <svg class="table__svg" width="16" height="16">
+                      <use href="./img/icons.svg#icon-cross"></use>
+                    </svg>
+                    No AI assistance
+                  </p>
+                  <p class="table__item">
+                    <svg class="table__svg" width="16" height="16">
+                      <use href="./img/icons.svg#icon-cross"></use>
+                    </svg>
+                    Moderate speeds
+                  </p>
+                  <p class="table__item">
+                    <svg class="table__svg" width="16" height="16">
+                      <use href="./img/icons.svg#icon-cross"></use>
+                    </svg>
+                    Partial UTF-8 support
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="quote-section">
+      <section class="quote-section section">
         <div class="container">
           <div class="quote-section__container">
             <img
@@ -329,8 +332,9 @@
             />
             <div class="quote-section__right">
               <p class="quote-section__quote">
-                “I was skeptical, but Area has completely transformed the way I
-                manage my business. The data visualizations are so clear and
+                “I was skeptical, but Area has completely transformed the way
+                <br />
+                I manage my business. The data visualizations are so clear and
                 intuitive, and the platform is so easy to use. I can't imagine
                 running my company without it.”
               </p>
@@ -340,9 +344,94 @@
           </div>
         </div>
       </section>
-      <section class="map-section"><div class="container"></div></section>
-      <section class="contact-section"><div class="container"></div></section>
+      <section class="map-section section" id="how-to-section">
+        <div class="container">
+          <div class="map-section__container">
+            <div class="map-section__hero">
+              <p class="map-section__heading">Map Your Success</p>
+              <button class="button button--light">Discover More</button>
+            </div>
+            <div class="map-section__content">
+              <div class="map-section__item">
+                <p class="map-section__number">01</p>
+                <p class="map-section__text">Get Started</p>
+                <p class="map-section__paragraf">
+                  With our intuitive setup, you’re up and running in minutes.
+                </p>
+              </div>
+              <div class="map-section__item">
+                <p class="map-section__number">02</p>
+                <p class="map-section__text">Customize and Configure</p>
+                <p class="map-section__paragraf">
+                  Adapt Area to your specific requirements and preferences.
+                </p>
+              </div>
+              <div class="map-section__item">
+                <p class="map-section__number">03</p>
+                <p class="map-section__text">Grow Your Business</p>
+                <p class="map-section__paragraf">
+                  Make informed decisions to exceed your goals.
+                </p>
+              </div>
+            </div>
+
+            <img
+              class="map-section__img"
+              src="./img/mountain-green.jpg"
+              alt="Green mountains image"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="contact-section section" id="contact-section">
+        <div class="container">
+          <div class="contact-section__container">
+            <div class="contact-section__content">
+              <p class="contact-section__text">Connect with us</p>
+              <p class="contact-section__paragraf">
+                Schedule a quick call to learn how Area can turn your regional
+                data into a powerful advantage.
+              </p>
+
+              <button class="button button--long">
+                <span class="button__text">Learn More</span>
+                <span class="button__svg">
+                  <svg class="button__arrow" width="6" height="6">
+                    <use href="./img/icons.svg#arrow-btn"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <ul class="footer__list">
+            <li><a class="link" href="#benefits-section">Benefits</a></li>
+            <li>
+              <a class="link" href="#specifications-section">Specifications</a>
+            </li>
+            <li><a class="link" href="#how-to-section">How-to</a></li>
+          </ul>
+
+          <div class="footer__content">
+            <svg class="footer__svg" width="32" height="70">
+              <use href="./img/icons.svg#icon-human"></use>
+            </svg>
+
+            <div class="footer__info">
+              <p class="footer__text">&copy; Area.</p>
+              <p class="footer__text">2025</p>
+            </div>
+            <p class="footer__text footer__text--right">All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/section.js"></script>
   </body>
 </html>

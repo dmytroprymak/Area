@@ -1,0 +1,41 @@
+.contact-section {
+  &__container {
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      border: 1px solid var(--color-gray-light);
+      left: -40px;
+      width: calc(100% + 80px);
+      content: "";
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 120px 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 400;
+    font-family: "Crimson Text";
+  }
+
+  &__paragraf {
+    color: var(--color-gray);
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "DM Sans";
+  }
+}

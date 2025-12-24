@@ -30,4 +30,17 @@
       background-color: var(--color-brand);
     }
   }
+
+  &--long {
+    width: 600px;
+  }
+  &__text,
+  &__svg {
+    transition: transform 0.4s;
+  }
+
+  &:hover &__text,
+  &:hover &__svg {
+    transform: translateX(232px);
+  }
 }
