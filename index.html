@@ -11,13 +11,24 @@
       <div class="container">
         <nav class="header__nav">
           <a class="header__logo" href="#">Area</a>
+          <button class="header__burger menu-btn-open">
+            <svg width="24" height="24">
+              <use href="./img/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
           <ul class="header__list">
-            <li><a class="link" href="#benefits-section">Benefits</a></li>
-            <li>
+            <li class="header__link">
+              <a class="link" href="#benefits-section">Benefits</a>
+            </li>
+            <li class="header__link">
               <a class="link" href="#specifications-section">Specifications</a>
             </li>
-            <li><a class="link" href="#how-to-section">How-to</a></li>
-            <li><a class="link" href="#contact-section">Contact Us</a></li>
+            <li class="header__link">
+              <a class="link" href="#how-to-section">How-to</a>
+            </li>
+            <li class="header__link">
+              <a class="link" href="#contact-section">Contact Us</a>
+            </li>
           </ul>
           <button class="header__button button">
             Learn More
@@ -28,7 +39,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <!-- <main>
       <section class="hero-section section">
         <div class="container">
           <h1 class="hero-section__title">Browse everything.</h1>
@@ -430,8 +441,9 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <script src="./js/section.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
