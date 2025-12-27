@@ -5,6 +5,7 @@
   font-family: "DM Sans";
   transition: color 0.4s;
   font-weight: 800;
+  white-space: nowrap;
 
   &:hover {
     color: var(--color-gray);
