@@ -16,20 +16,24 @@
 
   &__list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 27px;
     margin-bottom: 80px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
   }
 
   &__content {
     display: flex;
+    align-items: flex-end;
     gap: 40px;
-    align-items: flex-end; // everything on the bottom
   }
 
   &__svg {
-    flex-shrink: 0;
     align-self: flex-end;
+    flex-shrink: 0;
   }
 
   &__info {

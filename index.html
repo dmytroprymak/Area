@@ -67,7 +67,7 @@
         <div class="container">
           <h1 class="hero-section__title">Browse everything.</h1>
           <div class="hero-section__photo">
-            <picture class="hero-section__picture">
+            <picture>
               <source media="(min-width: 800px)" srcset="./img/tablet.jpg" />
               <source media="(min-width: 1280px)" srcset="./img/desktop.jpg" />
               <img
@@ -85,12 +85,36 @@
         <div class="container">
           <h2 class="trust-section__heading">Trusted by:</h2>
           <div class="trust-section__logos">
-            <img src="./img/logoipsum1.png" alt="Company with trust us" />
-            <img src="./img/logoipsum2.png" alt="Company with trust us" />
-            <img src="./img/logoipsum3.png" alt="Company with trust us" />
-            <img src="./img/logoipsum4.png" alt="Company with trust us" />
-            <img src="./img/logoipsum5.png" alt="Company with trust us" />
-            <img src="./img/logoipsum6.png" alt="Company with trust us" />
+            <img
+              class="trust-section__logo"
+              src="./img/logoipsum1.png"
+              alt="Company with trust us"
+            />
+            <img
+              class="trust-section__logo"
+              src="./img/logoipsum2.png"
+              alt="Company with trust us"
+            />
+            <img
+              class="trust-section__logo"
+              src="./img/logoipsum3.png"
+              alt="Company with trust us"
+            />
+            <img
+              class="trust-section__logo"
+              src="./img/logoipsum4.png"
+              alt="Company with trust us"
+            />
+            <img
+              class="trust-section__logo"
+              src="./img/logoipsum5.png"
+              alt="Company with trust us"
+            />
+            <img
+              class="trust-section__logo"
+              src="./img/logoipsum6.png"
+              alt="Company with trust us"
+            />
           </div>
         </div>
       </section>
@@ -164,11 +188,21 @@
               </p>
             </div>
           </div>
-          <img
-            class="benefits-section__img"
-            src="./img/mountain.jpg"
-            alt="Mountains image"
-          />
+          <picture class="benefits-section__img-container">
+            <source
+              media="(min-width: 800px)"
+              srcset="./img/mountain-tablet.jpg"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="./img/mountain-desktop.jpg"
+            />
+            <img
+              class="benefits-section__img"
+              src="./img/mountain-mobile.jpg"
+              alt="Mountains image"
+            />
+          </picture>
         </div>
       </section>
       <section class="example-section section">
@@ -211,11 +245,21 @@
               </ul>
               <button class="button button--light">Discover More</button>
             </div>
-            <img
-              class="example-section__img"
-              src="./img/paper-roll.jpg"
-              alt="Paper roll image"
-            />
+            <picture>
+              <source
+                media="(min-width: 800px)"
+                srcset="./img/paper-roll-tablet.jpg"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/paper-roll-desktop.jpg"
+              />
+              <img
+                class="example-section__img"
+                src="./img/paper-roll-mobile.jpg"
+                alt="Paper roll image"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -281,7 +325,7 @@
                     <svg class="table__svg" width="14" height="14">
                       <use href="./img/icons.svg#icon-check"></use>
                     </svg>
-                    Fast browsing
+                    Very fast browsing
                   </p>
                   <p class="table__item">
                     <svg class="table__svg" width="14" height="14">
@@ -305,7 +349,7 @@
                     <svg class="table__svg" width="14" height="14">
                       <use href="./img/icons.svg#icon-check"></use>
                     </svg>
-                    Fast browsing
+                    Very fast browsing
                   </p>
                   <p class="table__item">
                     <svg class="table__svg" width="16" height="16">
@@ -370,14 +414,15 @@
             />
             <div class="quote-section__right">
               <p class="quote-section__quote">
-                “I was skeptical, but Area has completely transformed the way
-                <br />
-                I manage my business. The data visualizations are so clear and
+                “I was skeptical, but Area has completely transformed the way I
+                manage my business. The data visualizations are so clear and
                 intuitive, and the platform is so easy to use. I can't imagine
                 running my company without it.”
               </p>
-              <p class="quote-section__author">John Smith</p>
-              <p class="text-caption">Head of Data</p>
+              <div class="quote-section__info">
+                <p class="quote-section__author">John Smith</p>
+                <p class="text-caption">Head of Data</p>
+              </div>
             </div>
           </div>
         </div>
@@ -413,11 +458,13 @@
               </div>
             </div>
 
-            <img
-              class="map-section__img"
-              src="./img/mountain-green.jpg"
-              alt="Green mountains image"
-            />
+            <div class="map-section__img-container">
+              <img
+                class="map-section__img"
+                src="./img/mountain-green.jpg"
+                alt="Green mountains image"
+              />
+            </div>
           </div>
         </div>
       </section>

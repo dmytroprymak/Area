@@ -1,6 +1,5 @@
 .why-section {
-  padding: 80px 0 80px 0;
-
+  padding: 80px 0 60px 0;
   &__container {
     display: flex;
     text-align: center;
@@ -10,24 +9,47 @@
     margin: 0 auto;
     width: 100%;
     max-width: 720px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 120px;
+    }
+  }
+
+  &__left {
+    flex-direction: column;
   }
 
   &__caption {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 40px;
+    }
   }
 
   &__text {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 60px;
     font-weight: 400;
     font-family: "Crimson Text";
+    line-height: 1;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 40px;
+    }
   }
 
   &__paragraf {
     color: var(--color-gray);
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 15px;
     font-weight: 400;
     font-family: "DM Sans";
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 40px;
+    }
   }
 }

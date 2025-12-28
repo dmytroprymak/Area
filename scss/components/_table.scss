@@ -1,21 +1,37 @@
 .table {
-  width: 100%;
   display: flex;
-  justify-content: center;
-  flex-basis: calc(100% / 3);
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  overflow-x: auto;
+
+  @media screen and (min-width: $bp-tablet) {
+    justify-content: center;
+    overflow-x: visible;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    flex-basis: calc(100% / 3);
+  }
 
   &__first,
   &__second,
   &__third {
     flex-shrink: 0;
-    max-width: 400px;
-    // border: 1px solid var(--color-gray);
+    max-width: 200px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 240px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 400px;
+    }
   }
 
   &__first {
     border: 1px solid var(--color-gray-light);
     border-radius: 24px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
     &:not(:nth-child(1))::before {
       position: absolute;
       top: 0;
@@ -57,18 +73,35 @@
   &__item {
     position: relative;
     display: flex;
-    gap: 8px;
     align-items: center;
-    width: 400px;
-    padding: 35px;
+    gap: 8px;
+    width: 210px;
+    padding: 35px 13px;
     margin: 0;
+    white-space: nowrap;
     &::before {
       position: absolute;
       top: 0;
       left: 0;
-      width: 400px;
+      width: 200px;
       border: 0.5px solid var(--color-gray-light);
       content: "";
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 240px;
+      padding: 35px 20px;
+      &::before {
+        width: 240px;
+      }
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 400px;
+      padding: 32px 30px;
+      &::before {
+        width: 400px;
+      }
     }
   }
 

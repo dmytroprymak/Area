@@ -12,10 +12,9 @@
   &--before::before {
     position: absolute;
     top: -80px;
-    width: 100%;
     border: 2px solid var(--color-gray-light);
-    left: -40px;
-    width: calc(100% + 80px);
+    left: 0;
+    width: 100%;
     content: "";
   }
 }

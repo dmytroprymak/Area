@@ -10,16 +10,20 @@
 
   &__text {
     font-size: 60px;
-    height: 54px;
-    margin-bottom: 50px;
+    line-height: 1;
+    margin-bottom: 30px;
     font-weight: 400;
-    line-height: 1.4;
     font-family: "Crimson Text";
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 50px;
+      line-height: 1.4;
+    }
   }
 
   &__paragraf {
     color: var(--color-gray);
-    margin-bottom: 90px;
+    margin-bottom: 130px;
     font-size: 15px;
     font-weight: 300;
     font-family: "DM Sans";
@@ -27,22 +31,30 @@
 
   &__list {
     display: flex;
+    flex-direction: column;
     text-align: left;
     gap: 20px;
-    flex-basis: calc((100% - 60px) / 4);
-    margin-bottom: 60px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc((100% - 60px) / 4);
+      flex-direction: row;
+      margin-bottom: 60px;
+    }
   }
+
   &__advantage {
     position: relative;
     align-items: start;
 
     &::before {
       position: absolute;
-      // left: 0;
       top: -42px;
       width: 100%;
       border: 1px solid var(--color-gray-light);
       content: "";
+      @media screen and (min-width: $bp-tablet) {
+        top: -42px;
+      }
     }
   }
   &__advantage-img {
@@ -60,15 +72,28 @@
     font-size: 15px;
     font-weight: 400;
     font-family: "DM Sans";
+    margin-bottom: 100px;
+  }
+
+  &__img-container {
+    object-fit: cover;
   }
 
   &__img {
     display: block;
     margin: 0 auto;
     width: 100%;
-    max-width: 1200px;
-    height: 100%;
-    max-height: 620px;
+    max-width: 340px;
+    height: 600px;
     border-radius: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 720px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 1200px;
+      height: 620px;
+    }
   }
 }

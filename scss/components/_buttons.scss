@@ -2,15 +2,15 @@
   display: flex;
   align-items: center;
   gap: 2px;
-  color: var(--color-background);
   padding: 14px 22px;
-  border: none;
-  border-radius: 32px;
+  color: var(--color-background);
   background-color: var(--color-button);
   transition: background-color 0.3s;
   font-size: 14px;
   font-weight: 800;
   font-family: "DM Sans";
+  border: none;
+  border-radius: 32px;
   cursor: pointer;
 
   &__arrow {
@@ -32,8 +32,17 @@
   }
 
   &--long {
-    width: 600px;
+    width: 343px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 520px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 600px;
+    }
   }
+
   &__text,
   &__svg {
     transition: transform 0.4s;
