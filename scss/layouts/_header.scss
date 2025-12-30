@@ -5,8 +5,16 @@
   margin-bottom: 40px;
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
+
   background-color: var(--color-background);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10000;
+
+  &.is-open {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    box-shadow: none;
+  }
 
   @media screen and (min-width: $bp-tablet) {
     margin-bottom: 70px;
@@ -16,12 +24,7 @@
   &__container {
     position: relative;
     max-width: 1320px;
-    padding: 0 20px;
     margin: 0 auto;
-
-    @media screen and (min-width: $bp-tablet) {
-      padding: 0 40px;
-    }
   }
 
   &__nav {
@@ -30,21 +33,32 @@
 
     &.is-open {
       .header__bottom {
-        transform: translateY(0);
+        display: block;
+        top: 100%;
+        max-height: 500px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        border-bottom-right-radius: 32px;
+        border-bottom-left-radius: 32px;
+      }
+
+      .header__link::before {
+        content: "";
       }
     }
   }
   // TOP
   &__top {
+    position: relative;
     display: flex;
+
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 20px 20px;
     width: 100%;
     z-index: 40;
 
     @media screen and (min-width: $bp-tablet) {
-      padding: 20px 0 0 0;
+      padding: 20px 40px;
     }
   }
 
@@ -103,14 +117,13 @@
     align-items: start;
     flex-direction: column;
     width: 100%;
-    padding: 8px 0 32px 0;
-    transform: translateY(-150%);
-    top: 100%;
+    max-height: 0;
+    padding: 8px 20px 32px 20px;
+    top: -1000%;
     left: 0;
-    transition: transform 0.5s ease;
+    transition: max-height 0.5s ease;
     background-color: var(--color-background);
-    border-bottom-right-radius: 32px;
-    border-bottom-left-radius: 32px;
+    border-radius: 0;
     z-index: 30;
     overflow: hidden;
 
@@ -137,7 +150,7 @@
       width: 100%;
       top: 1px;
       border: 1px solid var(--color-gray-light);
-      content: "";
+      content: none;
     }
     @media screen and (min-width: $bp-tablet) {
       padding: 0;

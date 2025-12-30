@@ -50,6 +50,10 @@
 
   &:hover &__text,
   &:hover &__svg {
-    transform: translateX(232px);
+    transform: translateX(106px);
+
+    @media screen and (min-width: $bp-tablet) {
+      transform: translateX(232px);
+    }
   }
 }
